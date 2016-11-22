@@ -33,7 +33,7 @@ public class TestClient {
 		String result = restTemplate.getForObject("http://cloud-test-service", String.class);
 		//System.out.println(result);
 		String result1 = "";//restTemplate.getForObject("http://scloud", String.class);
-		return result+"\n"+result1;
+		return result+"  ||  "+result1;
     }
 	
 	@RequestMapping("/scloud")
@@ -44,7 +44,7 @@ public class TestClient {
 	
 	@RequestMapping("/ss")
     public String s2() {
-		String result = restTemplate.getForObject("http://cloud-test-service", String.class);
+		String result = restTemplate.getForObject("http://cloud-test-service/say", String.class);
 		String result1 = restTemplate.getForObject("http://scloud", String.class);
 		return result+"\n"+result1;
     }
