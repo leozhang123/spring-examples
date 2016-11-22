@@ -1,6 +1,6 @@
 /**
  * 
- * Create on 2016年11月16日
+ * Create on 2016年11月17日
  */
 package org.zl.test.springcloud.config;
 
@@ -14,13 +14,18 @@ import org.springframework.cloud.config.server.EnableConfigServer;
  */
 @SpringBootApplication
 @EnableConfigServer
-public class Application {
+public class ConfigServer {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
+		System.setProperty("http.proxySet", "true");
+		System.setProperty("http.proxyHost","10.22.98.21");
+		System.setProperty("http.proxyPort", "8080");
+		System.setProperty("https.proxyPort", "8080");
+		System.setProperty("https.proxyHost", "10.22.98.21");
+		SpringApplication.run(ConfigServer.class, args);
 	}
 
 }

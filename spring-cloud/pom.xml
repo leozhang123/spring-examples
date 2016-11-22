@@ -6,6 +6,12 @@
   <packaging>pom</packaging>
   <modules>
   	<module>config-server</module>
+  	<module>config-repo</module>
+  	<module>config-client</module>
+  	<module>eureka-server</module>
+  	<module>test-service</module>
+  	
+  	<module>test-client</module>
   </modules>
   <properties>
   	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
