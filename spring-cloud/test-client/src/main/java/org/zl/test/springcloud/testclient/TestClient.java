@@ -32,8 +32,8 @@ public class TestClient {
     public String home() {
 		String result = restTemplate.getForObject("http://cloud-test-service", String.class);
 		//System.out.println(result);
-		String result1 = "";//restTemplate.getForObject("http://scloud", String.class);
-		return result+"  ||  "+result1;
+		//String result1 = "";//restTemplate.getForObject("http://scloud", String.class);
+		return result;
     }
 	
 	@RequestMapping("/scloud")
