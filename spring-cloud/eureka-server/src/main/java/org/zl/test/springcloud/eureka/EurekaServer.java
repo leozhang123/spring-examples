@@ -14,7 +14,7 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
  * @version 0.0.1
  */
 @SpringBootApplication
-@EnableEurekaServer
+@EnableEurekaServer()
 @EnableDiscoveryClient
 public class EurekaServer {
 
