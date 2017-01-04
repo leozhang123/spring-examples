@@ -13,6 +13,7 @@
   	
   	<module>test-client</module>
   	<module>test-service1</module>
+  	<module>zuul</module>
   </modules>
   <properties>
   	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
